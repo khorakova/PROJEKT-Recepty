@@ -33,3 +33,120 @@ Nastav je receptům jako obrázky na pozadí (tj. nepřidávej je jako <img> do 
 Na rozložení prvků NEPOUŽÍVEJ absolutní pozicování, ale pouze flexboxy.
 Flexboxy mohou být vnořené do sebe, klidně několikrát.
 */
+body {
+	color: white;
+}
+
+h4 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	margin: 0;
+}
+
+h1 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+	font-size: 28px;
+	margin: 0;
+}
+
+h2 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+	font-size: 18px;
+	margin: 0;
+}
+
+.main {
+	background-image: url(/images/salat.jpg);
+	min-height: 200px;
+}
+
+.small1 {
+	background-image: url(/images/chlebicek.jpg);
+	min-height: 90px;
+}
+
+.small2 {
+	background-image: url(/images/tacos.jpg);
+	min-height: 90px;
+}
+
+.small3 {
+	background-image: url(/images/cizrna.jpg);
+	min-height: 90px;
+}
+
+.small4 {
+	background-image: url(/images/burger.jpg);
+	min-height: 90px;
+}
+
+.recipe {
+	padding: 10px;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.category {
+	flex-basis: 50%;
+}
+
+.koments {
+	flex-basis: 50%;
+	text-align: right;
+}
+
+.title {
+	flex-basis: 100%;
+	align-self: flex-end;
+}
+
+@media screen and (min-width: 540px) {
+	h1 {
+		font-size: 36px;
+	}
+	h2 {
+		font-size: 22px;
+	}
+	.small-recipe {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.recipe {
+		padding: 20px;
+		flex-basis: 50%;
+		min-height: 150px;
+	}
+	.main {
+		flex-basis: 100%;
+		min-height: 250px;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	h1 {
+		font-size: 48px;
+	}
+	h2 {
+		font-size: 28px;
+	}
+	.all-recipe {
+		display: flex;
+	}
+	.main {
+		flex-basis: 40%;
+		min-height: 400px;
+	}
+	.small-recipe {
+		flex-basis: 60%;
+	}
+	.recipe {
+		min-height: 200px;
+	}
+}
+
+
